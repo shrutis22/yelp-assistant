@@ -7,7 +7,7 @@ This was presented as a **Theater Session** at Dreamforce 2019 - https://success
 ## 🛠️ How is this built
 The bot is built using **Einstein Bots** (_Salesforce_). It uses the **Yelp GraphQL** API to find restaurants given a city, cuisine and price range.
 
-What makes it unique is the usage of base _Lightning Web Component_ namely - [`lightningsnapin-base-chat-message` ](https://developer.salesforce.com/docs/component-library/bundle/lightningsnapin-base-chat-message) to render a [**Image Carousel**](https://github.com/shrutis22/yelp-assistant/tree/master/force-app/main/default/lwc/yelpChatMessage) of the top 5 results.
+What makes it unique is the usage of base _Lightning Web Component_ namely - [`lightningsnapin-base-chat-message` ](https://developer.salesforce.com/docs/component-library/bundle/lightningsnapin-base-chat-message) to render an [**Image Carousel**](https://github.com/shrutis22/yelp-assistant/tree/master/force-app/main/default/lwc/yelpChatMessage) of the top 5 results.
 
 ![image](https://user-images.githubusercontent.com/16715515/68050901-27c27100-fd0c-11e9-906c-6ca8df06aea4.png)
 
