@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmbeddedServiceConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areGuestUsersAllowed>false</areGuestUsersAllowed>
+    <embeddedServiceCustomComponents>
+        <componentBundleType>LightningComponentBundle</componentBundleType>
+        <customComponent>yelpChatMessage</customComponent>
+        <customComponentType>LA_PlainTextChatMessage</customComponentType>
+    </embeddedServiceCustomComponents>
+    <masterLabel>Yelp Chat Assistant</masterLabel>
+    <shouldHideAuthDialog>false</shouldHideAuthDialog>
+    <site>Dreamforce19</site>
+</EmbeddedServiceConfig>

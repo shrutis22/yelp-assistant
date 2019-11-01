@@ -1,0 +1,9 @@
+.message-block {
+    margin-top: 3px;
+    margin-left: 40px;
+    padding: 5px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #f2f2f3;
+    font-size: 14px;
+    text-align: left
+}

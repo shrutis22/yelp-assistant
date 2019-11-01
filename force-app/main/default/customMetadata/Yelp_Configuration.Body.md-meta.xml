@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Body</label>
+    <protected>false</protected>
+    <values>
+        <field>Value__c</field>
+        <value xsi:type="xsd:string">{
+  search(term: &quot;##TERM##&quot;, location: &quot;##LOCATION##&quot;, price: &quot;##PRICE##&quot;, limit: 5, sort_by: &quot;rating&quot;) {
+    business {
+      id
+      name
+      rating
+      photos
+      url
+      location {
+        formatted_address
+      }
+    }
+  }
+}</value>
+    </values>
+</CustomMetadata>

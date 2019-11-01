@@ -1,0 +1,24 @@
+<template>
+    <div class="question" if:true={isQuestion}>
+        <lightning-formatted-rich-text value={message}>
+        </lightning-formatted-rich-text>
+    </div>
+
+    <div class="answer" if:true={isAnswer}>
+        <lightning-carousel>
+            <lightning-carousel-image   for:each={message.data.search.business}
+                                        for:item="business"
+                                        key={business.id}
+                                        src={business.photo}
+                                        header={business.header}
+                                        description={business.description}
+                                        href={business.url}>
+            </lightning-carousel-image>
+        </lightning-carousel>
+    </div>
+
+    <div class="error" if:true={isError}>
+        <lightning-formatted-rich-text value={message}>
+        </lightning-formatted-rich-text>
+    </div>
+</template>

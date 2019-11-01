@@ -1,0 +1,105 @@
+<apex:page standardStylesheets="false"
+           showHeader="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           docType="html-5.0">
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+            <title>🤖 Yelp Assistant - Shruti Sridharan - DF&rsquo;19</title>            
+            
+            <!--Shortcut Icon-->
+            <link rel="shortcut icon" href="/resource/Yelp_Avatar" />
+
+            <!--SLDS-->
+            <apex:slds />
+
+            <!--Animate CSS-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+            
+            <!--Custom Styles-->
+            <style type="text/css">
+                .slds-scope img {
+                    margin-top: 10px;
+                    max-width: 40% !important;
+                }
+                .slds-scope .slds-carousel__content {
+                    height: auto !important;
+                }
+                .slds-box {
+                    box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.40);
+                    position: fixed;
+                    bottom: 0;
+                }
+                .embeddedServiceHelpButton .helpButton .uiButton {
+                    background-color: #005290;
+                    font-family: "Arial", sans-serif;
+                }
+                .embeddedServiceHelpButton .helpButton .uiButton:focus {
+                    outline: 1px solid #005290;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="slds-scope">
+                <!--Yelp-->
+                <img src="/resource/Yelp_Assistant" class="slds-m-around_medium animated bounceInDown"/>
+                
+                <!--Marketing Toast-->
+                <div class="slds-box slds-text-heading_large slds-m-around_medium slds-size_6-of-12 animated bounceInLeft delay-1s">
+                    Curious to know how I built this <em>lively</em> 🤖 Einstein Bot? Visit my session on November 19<sup>th</sup> 
+                    @ <b>Dreamforce</b> - <a href="https://success.salesforce.com/sessions?eventId=a1Q3A000021ea1UUAQ#/session/a2q3A000002BJOwQAO" target="_blank">
+                    Boost Customer Engagement by Customizing Einstein Bot Messages with LWC</a>
+                    to learn more.
+                    
+                    <div class="slds-text-align_center slds-text-title_caps slds-m-top_medium">
+                        <a href="http://www.shrutisridharan.com" target="_blank">www.shrutisridharan.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Embedded Service Snippet-->
+            <script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
+            <script type="text/javascript">
+                var initESW = function(gslbBaseURL) {
+                    embedded_svc.settings.displayHelpButton = true;
+                    embedded_svc.settings.language = "";
+                    
+                    embedded_svc.settings.enabledFeatures = ["LiveAgent"];
+                    embedded_svc.settings.entryFeature = "LiveAgent";
+                    
+                    embedded_svc.init(
+                        "https://shruti-s-dev-ed.my.salesforce.com",
+                        "https://galfar-poc-developer-edition.ap8.force.com/",
+                        gslbBaseURL,
+                        "00D0o00000192wk",
+                        "Yelp_Chat_Assistant",
+                        {
+                            baseLiveAgentContentURL: "https://c.la1-c2-hnd.salesforceliveagent.com/content",
+                            deploymentId: "5720o000000HJHh",
+                            buttonId: "5730o000000HKVo",
+                            baseLiveAgentURL: "https://d.la1-c2-hnd.salesforceliveagent.com/chat",
+                            eswLiveAgentDevName: "EmbeddedServiceLiveAgent_Parent04I0o0000004DiaEAE_16d76cffc47",
+                            isOfflineSupportEnabled: false
+                        }
+                    );                    
+                    embedded_svc.onHelpButtonClick();
+                };
+            
+                if (!window.embedded_svc) {
+                    var s = document.createElement("script");
+                    s.setAttribute("src", "https://shruti-s-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js");
+                    s.onload = function() {
+                        initESW(null);
+                    };
+                    document.body.appendChild(s);
+                } else {
+                    initESW("https://service.force.com");
+                }
+            </script>    
+        </body>
+    </html>
+</apex:page>
