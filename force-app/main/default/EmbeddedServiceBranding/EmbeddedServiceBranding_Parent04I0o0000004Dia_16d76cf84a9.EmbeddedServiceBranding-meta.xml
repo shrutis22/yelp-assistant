@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmbeddedServiceBranding xmlns="http://soap.sforce.com/2006/04/metadata">
     <contrastInvertedColor>#ffffff</contrastInvertedColor>
-    <contrastPrimaryColor>#333333</contrastPrimaryColor>
+    <contrastPrimaryColor>#ea4f3d</contrastPrimaryColor>
     <embeddedServiceConfig>Yelp_Chat_Assistant</embeddedServiceConfig>
     <font>Salesforce Sans</font>
     <height>640</height>
     <masterLabel>EmbeddedServiceBranding_Parent04I0o0000004Dia_16d76cf84a9</masterLabel>
-    <navBarColor>#222222</navBarColor>
-    <primaryColor>#222222</primaryColor>
-    <secondaryColor>#005290</secondaryColor>
+    <navBarColor>#ea4f3d</navBarColor>
+    <primaryColor>#ea4f3d</primaryColor>
+    <secondaryColor>#ea4f3d</secondaryColor>
     <width>640</width>
 </EmbeddedServiceBranding>
