@@ -82,6 +82,7 @@
                     embedded_svc.settings.enabledFeatures = ["LiveAgent"];
                     embedded_svc.settings.entryFeature = "LiveAgent";
                     
+                    embedded_svc.settings.headerBackgroundURL = "https://galfar-poc-developer-edition.ap8.force.com/resource/Yelp_Background";
                     embedded_svc.settings.chatbotAvatarImgURL = "https://galfar-poc-developer-edition.ap8.force.com/resource/Yelp_Avatar";
                     embedded_svc.settings.defaultMinimizedText = "Ask Yelp Assistant";
 
